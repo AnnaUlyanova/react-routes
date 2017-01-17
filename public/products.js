@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   categories: [{
     id: 1,
     name: 'Action figures'
