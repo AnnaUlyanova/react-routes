@@ -43,7 +43,7 @@ export default {
 	id: 1,
     categoryId: 1,
     name: 'Batman mighty minis mystery bag',
-    image: '/images/batman.jpg',
+    image: `https://media.forbiddenplanet.com/products/95222.jpg`,
     description: 'Recreate favorite Batman™ stories with mighty mini figures, featuring pop joints for mix and match play. They are the perfect size for on the go DC Comics action! Collect the full assortment of favorite characters.'
   }]
 }

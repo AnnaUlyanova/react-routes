@@ -5,15 +5,15 @@ import Content from './Content'
 import Categories from './Categories'
 import Footer from './Footer'
 
-import Data from '../../public/products'
+import data from '../../public/products'
 
 
 export default React.createClass({
 
 getInitialState() {
   return {
-    categories: Data.categories,
-    products: Data.products
+    categories: data.categories,
+    products: data.products
   }
 },
 
