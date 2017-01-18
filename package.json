@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "webpack-dev-server --content-base public/ --hot --inline",
     "start": "nodemon ./server/index.js",
-    "test": "tape -r babel-register 'test/**/*.test.js' | tap-spec",
+    "test": "webpack --config test.config.js && cat test/bundle.js | tape-run | tap-spec",
     "watch": "nodemon -e js,jsx -x npm test"
   },
   "babel": {
@@ -25,13 +25,17 @@
     "babel-preset-react": "^6.16.0",
     "babel-register": "^6.18.0",
     "enzyme": "^2.7.0",
+    "json-loader": "^0.5.4",
     "jsx-loader": "^0.13.2",
     "nodemon": "^1.11.0",
     "react": "^15.4.2",
     "react-addons-test-utils": "^15.4.2",
     "react-dom": "^15.4.2",
+    "sinon": "^1.17.7",
+    "supertest": "^2.0.1",
     "tap-spec": "^4.1.1",
     "tape": "^4.6.3",
+    "tape-run": "^2.1.5",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2"
   },
